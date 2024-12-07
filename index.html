@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>اعمللي خدمة | My Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        body[lang="en"] {
+            font-family: 'Roboto', sans-serif;
+            direction: ltr;
+        }
+
+        header {
+            background-color: #005f6b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .language-switcher {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .language-switcher button {
+            background: #fff;
+            color: #005f6b;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        .language-switcher button:hover {
+            background: #ff6b35;
+            color: #fff;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #ff6b35, #ff9f43);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+
+        .hero .cta-btn {
+            background-color: #ff6b35;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .hero .cta-btn:hover {
+            background-color: #e56b23;
+        }
+
+        .services {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .services h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .services .service-card {
+            display: inline-block;
+            background: #fff;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .services .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services .service-card {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body lang="ar">
+    <header>
+        <h1 data-ar="اعمللي خدمة" data-en="My Service">اعمللي خدمة</h1>
+        <p data-ar="خدمات مهنية بين يديك بكل سهولة وأمان" data-en="Professional services at your fingertips.">خدمات مهنية بين يديك بكل سهولة وأمان</p>
+        <div class="language-switcher">
+            <button onclick="switchLanguage('ar')">عربي</button>
+            <button onclick="switchLanguage('en')">English</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2 data-ar="خدماتك الموثوقة في مكان واحد" data-en="Trusted services in one place">خدماتك الموثوقة في مكان واحد</h2>
+        <p data-ar="احصل على أفضل الخدمات المهنية عبر تطبيقنا الرائد" data-en="Get the best professional services with our leading app">احصل على أفضل الخدمات المهنية عبر تطبيقنا الرائد</p>
+        <a href="#" class="cta-btn" data-ar="ابدأ الآن" data-en="Get Started">ابدأ الآن</a>
+    </section>
+
+    <section class="services">
+        <h3 data-ar="خدماتنا" data-en="Our Services">خدماتنا</h3>
+        <div class="service-card">
+            <h4 data-ar="صيانة المنازل" data-en="Home Maintenance">صيانة المنازل</h4>
+            <p data-ar="أعمال السباكة والكهرباء والتكييف" data-en="Plumbing, electrical work, and air conditioning">أعمال السباكة والكهرباء والتكييف</p>
+        </div>
+        <div class="service-card">
+            <h4 data-ar="صيانة أجهزة الكمبيوتر" data-en="Computer Maintenance">صيانة أجهزة الكمبيوتر</h4>
+            <p data-ar="إصلاح السوفت وير والهارد وير" data-en="Software and hardware repair">إصلاح السوفت وير والهارد وير</p>
+        </div>
+        <div class="service-card">
+            <h4 data-ar="أعمال الحدادة والنجارة" data-en="Metalwork and Carpentry">أعمال الحدادة والنجارة</h4>
+            <p data-ar="تصميم وصيانة الأثاث" data-en="Furniture design and repair">تصميم وصيانة الأثاث</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p data-ar="© 2024 اعمللي خدمة | جميع الحقوق محفوظة." data-en="© 2024 My Service | All rights reserved.">© 2024 اعمللي خدمة | جميع الحقوق محفوظة.</p>
+        <p data-ar="تواصل معنا: info@myservice.com" data-en="Contact us: info@myservice.com">تواصل معنا: info@myservice.com</p>
+    </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            document.body.lang = lang;
+            const elements = document.querySelectorAll('[data-ar][data-en]');
+            elements.forEach(el => {
+                el.textContent = el.getAttribute(`data-${lang}`);
+            });
+            document.body.style.direction = lang === 'ar' ? 'rtl' : 'ltr';
+        }
+    </script>
+</body>
+</html>
